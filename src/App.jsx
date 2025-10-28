@@ -24,7 +24,6 @@ const App = () => {
         <Experience />
         <Work />
         <Education />
-        <Contact />
         <Footer />
       </div>
 
@@ -33,3 +32,5 @@ const App = () => {
 };
 
 export default App;
+
+//At line 27 <Contact /> was removed. Can be added if wanted
