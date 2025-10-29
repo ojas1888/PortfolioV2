@@ -7,27 +7,26 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-4 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans mt-16 md:mt-24 lg:mt-32"
+      className="py-4 px-[7vw] md:px-[10vw] lg:px-[14vw] font-sans mt-16 md:mt-24 lg:mt-32"
     >
-      <div className="flex flex-col-reverse md:flex-row justify-between items-center">
+      <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24 max-w-6xl mx-auto">
         {/* Left Side */}
-        <div className="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
+        <div className="w-full lg:w-1/2 text-center lg:text-left">
           {/* Greeting */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2 leading-tight">
             Hi, I am
           </h1>
+
           {/* Name */}
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 leading-tight">
             Ojas Srivastava
           </h2>
+
           {/* Skills Heading with Typing Effect */}
           <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-[#8245ec] leading-tight">
             <span className="text-white">I am a </span>
             <ReactTypingEffect
-              text={[
-                'FullStack Developer',
-                'Coder',
-              ]}
+              text={['Fullstack Developer', 'Coder']}
               speed={100}
               eraseSpeed={50}
               typingDelay={500}
@@ -37,12 +36,19 @@ const About = () => {
               )}
             />
           </h3>
+
           {/* About Me Paragraph */}
-          <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
-            I'm a 2025 BTech graduate in Electronics and Communication Engineering (ECE) from Jaypee Institute of Information Technology (JIIT), Noida.
-            I'm an enthusiastic and dedicated individual with a strong passion for continuous learning and personal development. I thrive on embracing challenges and exploring emerging technologies. Throughout my college experience web development, programming and problem solving has captivated my interest, and I've eagerly delved into various technologies to expand my expertise.
-            Tech Geek, quick learner, learning while gaining experience.
+          <p className="text-base sm:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
+            I'm a 2025 B.Tech graduate in Electronics and Communication Engineering (ECE) 
+            from Jaypee Institute of Information Technology (JIIT), Noida.
+            I'm an enthusiastic and dedicated individual with a strong passion for 
+            continuous learning and personal development. I thrive on embracing challenges 
+            and exploring emerging technologies. Throughout my college experience, web 
+            development, programming, and problem solving have captivated my interest, and 
+            I've eagerly delved into various technologies to expand my expertise.
+            Tech geek, quick learner — learning while gaining experience.
           </p>
+
           {/* Resume Button */}
           <a
             href="https://drive.google.com/file/d/1d_eP13W7-P6Bc1mnJyu3cWg0Mj5FjUUm/view?usp=sharing"
@@ -56,12 +62,12 @@ const About = () => {
           >
             DOWNLOAD CV
           </a>
-          
         </div>
+
         {/* Right Side */}
-        <div className="md:w-1/2 flex justify-center md:justify-end">
+        <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
           <Tilt
-            className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] border-4 border-purple-700 rounded-full"
+            className="w-64 h-64 sm:w-72 sm:h-72 lg:w-[26rem] lg:h-[26rem] border-4 border-purple-700 rounded-full"
             tiltMaxAngleX={20}
             tiltMaxAngleY={20}
             perspective={1000}
